@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Architecture studio</title>
 </head>
@@ -14,15 +15,21 @@
     <header class="header">
         <div class="container">
             <div class="icons">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#facebook-icon"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#instagram-icon"></use>
-                </svg>
+                <a href="#">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#instagram-icon"></use>
+                    </svg>
+                </a>
             </div>
             <div class="title">
-                <h2>Architta</h2>
+                <a href="#">
+                    <h2>Architta</h2>
+                </a>
             </div>
             <ul class="menu">
                 <li class="menu__item">
@@ -45,14 +52,26 @@
         <section class="hero">
             <div class="container">
                 <h2>Architecture Studio</h2>
-                <div class="image">
-                    <img src="./img/hero-bg-1.jpg" alt="Stone room with big window">
-                    <div class="number">01</div>
+                <div class="my-slider">
+                    <div>
+                        <img src="./img/hero-bg-1.jpg" alt="Big room with grey wall and write chairs">
+                    </div>
+                    <div>
+                        <img src="./img/hero-bg-2.png" alt="Wood chairs on outdoor terrace">
+                    </div>
+                    <div>
+                        <img src="./img/hero-bg-3.png" alt="Cozy room with soft chairs near fireplace">
+                    </div>
+                </div>
+                <div id="custom_controlsContainer">
+                    <div id="prev">Prev</div>
+                    <div id="next">Next</div>
                 </div>
             </div>
         </section>
         <section class="about">
             <div class="container">
+                <div class="empty"></div>
                 <div class="text">
                     <div class="title">
                         <h2>Our DNA</h2>
@@ -73,7 +92,9 @@
         </section>
         <section class="work">
             <div class="container">
-                <h2>Selected Work</h2>
+                <div class="title">
+                    <h2>Selected Work</h2>
+                </div>
                 <img src="./img/work-image-1.jpg" alt="Outdoor terrace with a wood parket and brown table">
                 <p>Amet eu facilisi posuere ut at cras
                     non ipsum proin nunc purus tellus ultricies
@@ -223,6 +244,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/script.min.js"></script>
 </body>
 </html>
