@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Architecture studio</title>
 </head>
@@ -68,6 +69,9 @@
                     <div id="next">Next</div>
                 </div>
             </div>
+            <button id="upBtn">
+                <i class="fa-regular fa-circle-up"></i>
+            </button>
         </section>
         <section class="about">
             <div class="container">
@@ -82,7 +86,7 @@
                             elementum ut dui sed augue ultrices phasellus ullamcorper
                             condimentum ut suspendisse viverra ornare sit venenatis
                         </p>
-                        <img src="./img/about-image.jpg" alt="Wood carpet with a black table">
+                        <img class="reveal fade-bottom" src="./img/about-image.jpg" alt="Wood carpet with a black table">
                         <span>
                             Amet eu facilisi posuere ut at cras
                             non ipsum proin nunc purus tellus ultricies velit 
@@ -97,7 +101,7 @@
                 <div class="title">
                     <h2>Selected Work</h2>
                 </div>
-                <img src="./img/work-image-1.jpg" alt="Outdoor terrace with a wood parket and brown table">
+                <img class="reveal fade-left" src="./img/work-image-1.jpg" alt="Outdoor terrace with a wood parket and brown table">
                 <p>Amet eu facilisi posuere ut at cras
                     non ipsum proin nunc purus tellus ultricies
                     velit elementum ut dui sed augue ultrices phasellus
@@ -109,7 +113,7 @@
                     </div>
                     <div class="inside__right">
                         <h2>Louis Vuitton</h2>
-                        <img src="./img/work-image-2.jpg" alt="Room with write wall and grey chairs">
+                        <img class="reveal fade-left" src="./img/work-image-2.jpg" alt="Room with write wall and grey chairs">
                         <p>
                             Amet eu facilisi posuere ut at cras
                             non ipsum proin nunc purus tellus ultricies
@@ -170,7 +174,7 @@
                     <div class="title">
                         <h2>Lataste Blogs</h2>
                     </div>
-                    <ul class="news">
+                    <ul class="news reveal fade-bottom">
                         <li class="news__items">
                             <img src="./img/blog-image-1.jpg" alt="Two metal vase">
                             <p>
